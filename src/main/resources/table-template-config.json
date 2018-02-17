@@ -1,0 +1,37 @@
+{
+  "grabList": [
+    {
+      "invokeIntervalSeconds": 600,
+      "homeUrl": "http://www.kxdaili.com/",
+      "grabFromUrls": [
+        "http://www.kxdaili.com/ipList/{{1..10}}.html#ip",
+        "http://www.kxdaili.com/dailiip/1/{{1..10}}.html#ip",
+        "http://www.kxdaili.com/dailiip/2/{{1..10}}.html"
+      ],
+      "lineSelector": ".tab_c_box table tbody tr",
+      "skip": 0,
+      "columnSelector": "td",
+      "ipSelector": ":nth-child(1):not(tr)",
+      "portSelector": ":nth-child(2)",
+      "anonymousLevelSelector": ":nth-child(3)",
+      "proxyTypeSelector": ":nth-child(4)",
+      "locationSelector": ":nth-child(6)"
+    },
+    {
+      "invokeIntervalSeconds": 600,
+      "homeUrl": "http://www.66ip.cn/",
+      "grabFromUrls": [
+        "http://www.66ip.cn/{{1..20}}.html"
+      ],
+      "lineSelector": "tbody",
+      "skip": 0,
+      "columnSelector": "td",
+      "ipSelector": ":nth-child(1):not(tr)",
+      "portSelector": ":nth-child(2)",
+      "anonymousLevelSelector": ":nth-child(3)",
+      "proxyTypeSelector": ":nth-child(4)",
+      "locationSelector": ":nth-child(6)"
+    }
+  ],
+  "shareConfig": false
+}
