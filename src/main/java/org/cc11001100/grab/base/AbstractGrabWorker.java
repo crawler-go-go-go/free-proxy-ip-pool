@@ -29,6 +29,10 @@ public abstract class AbstractGrabWorker implements GrabWorker {
      */
     protected String[] grabFromUrls;
 
+    /**
+     * 返回从{@link #grabFromUrls}中抓取到的内容，一
+     * @return
+     */
     public abstract List<Proxy> grab();
 
     protected Document downloadDocument(String url) {
@@ -77,7 +81,7 @@ public abstract class AbstractGrabWorker implements GrabWorker {
         }
     }
 
-    public Integer getInvokeIntervalSeconds() {
+    public int getInvokeIntervalSeconds() {
         return invokeIntervalSeconds;
     }
 
@@ -99,5 +103,10 @@ public abstract class AbstractGrabWorker implements GrabWorker {
 
     public void setGrabFromUrls(String[] grabFromUrls) {
         this.grabFromUrls = grabFromUrls;
+    }
+
+    @Override
+    public String getName() {
+        return homeUrl;
     }
 }

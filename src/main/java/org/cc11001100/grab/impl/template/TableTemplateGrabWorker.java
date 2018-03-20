@@ -2,7 +2,7 @@ package org.cc11001100.grab.impl.template;
 
 import org.cc11001100.entity.Proxy;
 import org.cc11001100.grab.base.AbstractGrabWorker;
-import org.cc11001100.util.SimpleScriptParser;
+import org.cc11001100.utils.SimpleScriptParser;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
@@ -19,14 +19,17 @@ import static java.util.stream.Collectors.toList;
  */
 public class TableTemplateGrabWorker extends AbstractGrabWorker {
 
-    protected String lineSelector = "tr";
-    protected Integer skip = 0;
-    protected String columnSelector = "td";
-    protected String ipSelector;
-    protected String portSelector;
-    protected String anonymousLevelSelector;
-    protected String proxyTypeSelector;
-    protected String locationSelector;
+    // 对于表格布局，如何选中每行
+    private String lineSelector = "tr";
+    // 跳过选中的行的前几个，这个是为了表头考虑的，一般有表头是1，无表头是0
+    private Integer skip = 0;
+    // 如何从选中的每行中将列抽取出来
+    private String columnSelector = "td";
+    private String ipSelector = "";
+    private String portSelector = "";
+    private String anonymousLevelSelector = "";
+    private String proxyTypeSelector = "";
+    private String locationSelector = "";
 
     @Override
     public List<Proxy> grab() {

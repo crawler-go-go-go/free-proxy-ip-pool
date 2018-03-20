@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane fx:id="mainController" minHeight="0.0" minWidth="0.0" prefHeight="532.0" prefWidth="727.0">
+            <children>
+                <Button layoutX="235.0" layoutY="33.0" mnemonicParsing="false" text="确定" />
+                <Label layoutX="8.0" layoutY="37.0" text="网址：" />
+                <TextField fx:id="urlText" layoutX="52.0" layoutY="33.0" prefHeight="23.0" prefWidth="172.0" />
+                <TextField fx:id="rowText" layoutX="52.0" layoutY="83.0" prefHeight="23.0" prefWidth="172.0" />
+                <TextField fx:id="skipText" layoutX="52.0" layoutY="135.0" prefHeight="23.0" prefWidth="174.0" />
+                <TextField fx:id="columnText" layoutX="52.0" layoutY="183.0" prefHeight="23.0" prefWidth="174.0" />
+                <TextField fx:id="ipText" layoutX="52.0" layoutY="233.0" prefHeight="23.0" prefWidth="176.0" />
+                <TextField fx:id="portText" layoutX="52.0" layoutY="279.0" prefHeight="23.0" prefWidth="175.0" />
+                <TextArea fx:id="screen" layoutX="283.0" layoutY="14.0" prefHeight="510.0" prefWidth="433.0" />
+                <TextField fx:id="ananymousText" layoutX="52.0" layoutY="331.0" prefHeight="23.0" prefWidth="178.0" />
+                <TextField fx:id="typeText" layoutX="52.0" layoutY="386.0" prefHeight="23.0" prefWidth="179.0" />
+                <Button layoutX="234.0" layoutY="83.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="135.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="183.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="233.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="279.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="331.0" mnemonicParsing="false" text="确定" />
+                <Button layoutX="235.0" layoutY="386.0" mnemonicParsing="false" text="确定" />
+                <Label layoutX="11.0" layoutY="87.0" text="行：" />
+                <Label layoutX="11.0" layoutY="139.0" text="skip：" />
+                <Label layoutX="11.0" layoutY="187.0" text="列：" />
+                <Label layoutX="11.0" layoutY="237.0" text="ip：" />
+                <Label layoutX="11.0" layoutY="283.0" text="port：" />
+                <Label layoutX="11.0" layoutY="335.0" text="匿名：" />
+                <Label layoutX="11.0" layoutY="390.0" text="类型：" />
+                <Label layoutX="11.0" layoutY="437.0" text="地域：" />
+                <TextField fx:id="locationText" layoutX="52.0" layoutY="433.0" prefHeight="23.0" prefWidth="178.0" />
+                <Button layoutX="235.0" layoutY="433.0" mnemonicParsing="false" text="确定" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

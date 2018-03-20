@@ -1,4 +1,4 @@
-package org.cc11001100.util;
+package org.cc11001100.utils;
 
 import org.cc11001100.entity.Proxy;
 import org.cc11001100.grab.impl.template.TableTemplateConfiguration;
